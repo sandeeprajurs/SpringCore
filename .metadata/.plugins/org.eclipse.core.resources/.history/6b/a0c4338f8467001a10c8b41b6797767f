@@ -1,0 +1,8 @@
+package com.java.test;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class CarConfig {
+
+}

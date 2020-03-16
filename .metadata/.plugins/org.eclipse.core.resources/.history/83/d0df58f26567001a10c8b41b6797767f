@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+   
+  <!--   
+  setter injection
+  <bean id="principle" class="spring.core.example.Principle">
+   		<property name="name" value="Sandeep" />
+   </bean> -->
+   
+  <!-- Auto wire by name--- id name simialr to ref var name 
+  <bean id="engine" class="com.java.car.Engine">
+   		<property name="name" value="v-12" />
+   </bean>
+   -->
+   
+   <bean id="car" class="com.java.car.Car" autowire="byName">
+   		<property name="name" value="BMW" />
+   </bean>
+   
+   
+</beans>

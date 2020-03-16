@@ -1,0 +1,22 @@
+package com.test.car;
+
+import com.java.car.Engine;
+
+public class Car {
+	
+	Engine engine;
+	String name;
+		
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void display() {
+		engine.display();
+		System.out.println("Car name is "+name);
+	}
+}

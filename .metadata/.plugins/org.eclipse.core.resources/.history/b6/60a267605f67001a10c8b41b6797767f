@@ -1,0 +1,14 @@
+package spring.core.example;
+
+import java.applet.AppletContext;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class HelloBean {
+
+	public static void main(String[] args) {
+		AppletContext context = new ClassPathXmlApplicationContext();
+
+	}
+
+}

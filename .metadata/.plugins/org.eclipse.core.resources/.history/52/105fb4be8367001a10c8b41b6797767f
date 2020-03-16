@@ -1,0 +1,15 @@
+package com.test.car;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Car {
+	
+	@Autowired
+	Engine engine;
+	String name;
+		
+	public void display() {
+		engine.display();
+		System.out.println("Car name is "+name);
+	}
+}

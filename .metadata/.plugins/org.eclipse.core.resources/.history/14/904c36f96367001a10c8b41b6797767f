@@ -1,0 +1,12 @@
+package com.java.car;
+
+public class Car {
+	
+	Engine engine;
+	String name;
+	
+	public void display() {
+		engine.display();
+		System.out.println("Car name is "+name);
+	}
+}

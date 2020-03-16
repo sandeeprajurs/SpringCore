@@ -1,0 +1,10 @@
+package com.example.demo;
+
+public class Customer {
+	
+	private int custid;
+	private String custname;
+	private String coursename;
+	
+	
+}

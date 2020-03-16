@@ -1,0 +1,18 @@
+package com.java.test;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+import com.test.car.Car;
+
+@Configuration
+//@ComponentScan({"com.java.test", "com.test.car"})
+@PropertySource("classpath:car-info.properties")
+public class CarConfig {
+	
+	public Car carBean() {
+		Car car = new Car();
+		return car;
+	}
+}

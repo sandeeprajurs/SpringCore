@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+     
+    <context:component-scan/> 
+   <bean id="engine" class="com.test.java.Engine">
+   		<property name="name" value="v-12" />
+   </bean>
+   
+   <bean id="car" class="com.test.java.Car">
+   		<property name="name" value="BMW" />
+   </bean>
+   
+   
+</beans>

@@ -1,0 +1,24 @@
+package com.test.car;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+//@Component("car")
+public class Car {
+	
+//	@Autowired
+	Engine engine;
+	
+	@Value("${car.Name}")
+	String name;
+	
+	public Car(Engine engine){
+		this.engine = engine;
+	}
+		
+	public void display() {
+		engine.display();
+		System.out.println("Car name is "+name);
+	}
+}

@@ -1,0 +1,10 @@
+package spring.core.example;
+
+public class Principle {
+	
+	String name;
+	
+	public void display() {
+		System.out.println(name+" is principle");
+	}
+}

@@ -1,0 +1,15 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="principles" class="spring.core.example.Principle">
+   </bean>
+   
+   <bean id="college" class="spring.core.example.College">
+   		<property name="id" value="1" />
+   		<property name="name" value="CITECH" />
+   		<property name="country" value="India" />
+   		<property name="principle" ref="principles" />
+   </bean>
+</beans>
